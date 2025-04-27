@@ -1,45 +1,38 @@
 # 3D Sudoku Game
 
-A 3D Sudoku game with score tracking, difficulty settings, and score history.
+A 3D Sudoku game with score tracking, difficulty settings, and interactive gameplay.
 
 ## Features
-
-- **3D Sudoku Board**: Play Sudoku in a 3D environment for a unique challenge.
-- **Difficulty Settings**: Choose from easy, medium, or hard difficulty levels.
-- **Score Tracking**: Track your scores and progress over time.
-- **Score History**: View your past scores and performance.
+- **3D Sudoku Grid**: Play Sudoku across three layers of 9x9 grids.
+- **Score Tracking**: Track your score and save it to a local SQLite database.
+- **Difficulty Settings**: Choose between Easy, Medium, and Hard difficulty levels.
+- **Interactive UI**: Click to select cells and input numbers.
 
 ## Technologies Used
-
-- **Python**: For the game logic and backend.
-- **Pygame**: For rendering the 3D graphics and handling user input.
-- **SQLite**: For storing score history and tracking.
+- Python
+- Pygame
+- NumPy
+- SQLite
 
 ## Setup Instructions
-
 1. **Clone the Repository**:
    ```bash
    git clone https://github.com/Mavasahikona/3D-Sudoku-Game.git
    ```
-2. **Navigate to the Project Directory**:
+2. **Install Dependencies**:
    ```bash
-   cd 3D-Sudoku-Game
+   pip install pygame numpy
    ```
-3. **Install Dependencies**:
-   ```bash
-   pip install pygame
-   ```
-4. **Run the Game**:
+3. **Run the Game**:
    ```bash
    python main.py
    ```
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
 ## Usage
+- Click on a cell to select it.
+- Press a number key (1-9) to fill the selected cell.
+- Your score increases with each valid input.
+- The difficulty can be changed in the code (default is "Easy").
 
-- Launch the game and select your preferred difficulty.
-- Solve the 3D Sudoku puzzle by filling in the correct numbers.
-- Your scores will be automatically tracked and saved for future reference.
+## License
+MIT
